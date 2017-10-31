@@ -1,4 +1,11 @@
+ \newcommand{\noop}[1]{}
 \begin{thebibliography}{}
+
+\bibitem[Beck et~al., 2017]{Beck17c}
+Beck MW, {Hagy III} JD, Le C. 2017.
+\newblock Quantifying seagrass light requirements using an algorithm to
+  spatially resolve depth of colonization.
+\newblock Estuaries and Coasts, pages 1--17.
 
 \bibitem[Choice et~al., 2014]{Choice14}
 Choice ZD, Frazer TK, Jacoby CA. 2014.

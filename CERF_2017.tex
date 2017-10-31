@@ -102,9 +102,9 @@
 \title[Seagrass light requirements]{\textbf{Quantifying seagrass light requirements using an algorithm to spatially resolve depth of colonization}}
 \author[M. Beck, J. Hagy, C. Le]{Marcus W. Beck, James D. Hagy III, Chengfeng Le}
 
-\institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
+\institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org}, Phone: 714-755-3217}
 
-\date{Nov. 4, 2016}
+\date{Nov. 8, 2017}
 
 \titlegraphic{
 \begin{minipage}{0.4\textwidth}
@@ -148,7 +148,7 @@ Often used as a basis for establishing nutrient criteria {\tiny \cite{Steward07}
 \emtxt{Problem 2:} Large scale inferences require common approaches \\~\\
 \onslide<+->
 \begin{block}{Study objective}
-Develop and apply an algorithm that uses geospatial data to describe relationships between seagrass depth limits, water clarity, and light requirements \scriptsize [Beck, Hagy, Le, in review]
+Develop and apply an algorithm that uses geospatial data to describe relationships between seagrass depth limits, water clarity, and light requirements {\tiny \cite{Beck17c}}
 \end{block}
 \end{frame}
 
@@ -354,7 +354,7 @@ $K_d$: light extinction coefficient
 %%%%%%
 \begin{frame}{$\vcenter{\hbox{\includegraphics[width=0.05\paperwidth]{fig/epa_logo.png}}}$\hspace{0.07in}\textbf{Linking estimates to light requirements}}
 \onslide<1->
-Can we link depth estimates with water clarity to understand light requirements?
+Can we link depth estimates with water clarity to understand light requirements through space and time?
 \vspace{-0.2in}
 \begin{columns}[t]
 \footnotesize
@@ -384,52 +384,31 @@ Can we link depth estimates with water clarity to understand light requirements?
 
 %%%%%%
 \begin{frame}[t]{$\vcenter{\hbox{\includegraphics[width=0.05\paperwidth]{fig/epa_logo.png}}}$\hspace{0.07in}\textbf{Linking estimates to light requirements}}
-Tampa Bay summary: \\~\\
+Tampa Bay summary (one year): \\~\\
 \centerline{\includegraphics[width = 0.85\textwidth]{fig/tb_summ2.pdf}}
 \end{frame}
 
+% tb light requirement changes 1988 - 2010
+
+
 %%%%%%
-\begin{frame}{$\vcenter{\hbox{\includegraphics[width=0.05\paperwidth]{fig/epa_logo.png}}}$\hspace{0.07in}\textbf{Linking estimates to light requirements}}
+\begin{frame}[t]{$\vcenter{\hbox{\includegraphics[width=0.05\paperwidth]{fig/epa_logo.png}}}$\hspace{0.07in}\textbf{Linking estimates to light requirements}}
+Tampa Bay summary (many years):
 \scriptsize
-%latex.default(tabzc, file = "", rowlabel = "Segment", caption = cap.val,     colheads = col_heads, cgroup = c("", "$\\mathbf Z_{c,\\,med}$"),     n.cgroup = c(1, 4), caption.loc = "top", rowname = rows)%
-\begin{table}[!tbp]
-\caption{Summary of median depth of colonization ($Z_{c,\,med}$, m) for Tampa Bay and bay segments.\label{tabzc}} 
-\begin{center}
-\begin{tabular}{llcllll}
-\hline\hline
-\multicolumn{1}{l}{\bfseries Segment}&\multicolumn{1}{c}{\bfseries }&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries $\mathbf Z_{c,\,med}$}\tabularnewline
-\cline{4-7}
-\multicolumn{1}{l}{}&\multicolumn{1}{c}{$n$}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{St. Err.}&\multicolumn{1}{c}{Min}&\multicolumn{1}{c}{Max}\tabularnewline
-\hline
-\textbf{Tampa Bay}&218&&1.2\textsuperscript{}&0.1&0.6&1.6\tabularnewline
-\hspace{0.02in} HB&20&&1.1\textsuperscript{ab}&0.2&0.8&1.3\tabularnewline
-\hspace{0.02in} LTB&60&&1.3\textsuperscript{b}&0.1&1.1&1.5\tabularnewline
-\hspace{0.02in} MTB&74&&1.4\textsuperscript{b}&0.1&1.1&1.6\tabularnewline
-\hspace{0.02in} OTB&64&&0.8\textsuperscript{a}&0.2&0.6&1.1\tabularnewline
-\hline
-\end{tabular}\end{center}
+\begin{figure}
+\includegraphics[width = 0.9\textwidth]{fig/tb_ts1.pdf}
+\caption{Depth of colonization and light attenuation from 1988 - 2014 by Bay segment}
+\end{figure}
+\end{frame}
 
-\end{table}
-%latex.default(tablt, file = "", rowlabel = "Segment", caption = cap.val,     colheads = col_heads, cgroup = c("", "{\\bf \\% light}"),     n.cgroup = c(1, 4), caption.loc = "top", rowname = rows)%
-\begin{table}[!tbp]
-\caption{Summary of light requirements (\%) for Tampa Bay and bay segments.\label{tablt}} 
-\begin{center}
-\begin{tabular}{llcllll}
-\hline\hline
-\multicolumn{1}{l}{\bfseries Segment}&\multicolumn{1}{c}{\bfseries }&\multicolumn{1}{c}{\bfseries }&\multicolumn{4}{c}{\bfseries {\bf \% light}}\tabularnewline
-\cline{4-7}
-\multicolumn{1}{l}{}&\multicolumn{1}{c}{$n$}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{St. Err.}&\multicolumn{1}{c}{Min}&\multicolumn{1}{c}{Max}\tabularnewline
-\hline
-\textbf{Tampa Bay}&218&&41\textsuperscript{}&2.5&13&66\tabularnewline
-\hspace{0.02in} HB&20&&34.1&11.2&12.8&55.7\tabularnewline
-\hspace{0.02in} LTB&60&&40.0& 7.5&23.8&55.5\tabularnewline
-\hspace{0.02in} MTB&74&&36.1& 7.6&17.0&57.5\tabularnewline
-\hspace{0.02in} OTB&64&&48.9& 8.7&29.9&66.0\tabularnewline
-\hline
-\end{tabular}\end{center}
-
-\end{table}
-
+%%%%%%
+\begin{frame}[t]{$\vcenter{\hbox{\includegraphics[width=0.05\paperwidth]{fig/epa_logo.png}}}$\hspace{0.07in}\textbf{Linking estimates to light requirements}}
+Tampa Bay summary (many years):
+\scriptsize
+\begin{figure}
+\includegraphics[width = \textwidth]{fig/tb_ts2.pdf}
+\caption{Seagrass light requirements from 1988 - 2014 by Bay segment}
+\end{figure}
 \end{frame}
 
 %%%%%%
@@ -478,8 +457,8 @@ Online app \href{https://beckmw.shinyapps.io/sg_depth/}{https://beckmw.shinyapps
 \end{column}
 \begin{column}{0.5\textwidth}
 \scriptsize
-\href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
-Phone: 8509342480 \\~\\
+\href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org} \\~\\
+Phone: 714-755-3217 \\~\\
 Github: \href{https://github.com/fawda123/}{github.com/fawda123/} \\~\\
 Blog: \href{http://beckmw.wordpress.com/}{beckmw.wordpress.com/}
 \end{column}
@@ -489,7 +468,7 @@ Blog: \href{http://beckmw.wordpress.com/}{beckmw.wordpress.com/}
 
 %%%%%%
 \section{References}
-\begin{frame}[t]{\textbf{References}}
+\begin{frame}[t,shrink]{\textbf{References}}
 \tiny
 \setbeamertemplate{bibliography item}{}
 \bibliographystyle{apalike_mine}
